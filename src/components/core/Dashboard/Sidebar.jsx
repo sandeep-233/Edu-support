@@ -27,7 +27,7 @@ const Sidebar = () => {
 
   return (
     <div>
-        <div className="flex md:h-auto lg:h-[calc(100vh-3.5rem)] min-w-[220px] flex-col border-r-[1px] border-r-richblack-700 bg-richblack-800 py-10">
+        <div className="flex md:h-auto lg:h-[calc(100vh-3.5rem)] min-w-[220px] flex-col border-r-[1px] border-r-richblack-700 bg-richblack-800 text-richblack-500 py-10">
         <div className="flex flex-col">
                 {
                     sidebarLinks.map((link) => {
