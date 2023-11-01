@@ -9,20 +9,20 @@ const Instructor = () => {
     const {token} = useSelector((state)=> state.auth);
     const {user} = useSelector((state)=>state.profile);
     const [loading, setLoading] = useState(false);
-    // const [instructorData, setInstructorData] = useState(null);
+    const [instructorData, setInstructorData] = useState(null);
     const [courses, setCourses] = useState([]);
 
     useEffect(()=> {
         const getCourseDataWithStats = async() => {
             setLoading(true);
             
-            // const instructorApiData = await getInstructorData(token);
+            const instructorApiData = await getInstructorData(token);
             const result = await fetchInstructorCourses(token);
 
-            // console.log(instructorApiData);
+            console.log(instructorApiData);
 
-            // if(instructorApiData.length)
-            //     setInstructorData(instructorApiData);
+            if(instructorApiData.length)
+                setInstructorData(instructorApiData);
 
             if(result) {
                 setCourses(result);
@@ -32,8 +32,8 @@ const Instructor = () => {
         getCourseDataWithStats();
     },[])
 
-    // const totalAmount = instructorData?.reduce((acc,curr)=> acc + curr.totalAmountGenerated, 0);
-    // const totalStudents = instructorData?.reduce((acc,curr)=>acc + curr.totalStudentsEnrolled, 0);
+    const totalAmount = instructorData?.reduce((acc,curr)=> acc + curr.totalAmountGenerated, 0);
+    const totalStudents = instructorData?.reduce((acc,curr)=>acc + curr.totalStudentsEnrolled, 0);
 
   return (
     <div className='text-white'>
@@ -57,12 +57,12 @@ const Instructor = () => {
 
                     <div>
                         <p>Total Students</p>
-                        <p>totalStudents</p>
+                        <p>{totalStudents}</p>
                     </div>
 
                     <div>
                         <p>Total Income</p>
-                        <p>totalAmount</p>
+                        <p>{totalAmount}</p>
                     </div>
                 </div>
             </div>

@@ -29,6 +29,9 @@ import CourseDetails from './pages/CourseDetails'
 import Error from './pages/Error';
 import { useSelector } from "react-redux";
 import { ACCOUNT_TYPE } from "./utils/constants";
+import { SavedNotes } from "./components/core/Dashboard/SavedNotes";
+import { Notes } from "./pages/Notes";
+import AddNotes from "./components/core/Dashboard/AddNotes";
 
 function App() {
 
@@ -91,14 +94,12 @@ function App() {
 
         <Route
          path="/about"
-         element={
-            <OpenRoute>
-              <About />
-            </OpenRoute>
-         }
+         element={<About />}
         />
 
         <Route path="/contact" element={<Contact/>} />
+
+        <Route path="/notes" element={<Notes/>} />
 
         <Route
          element={
@@ -115,6 +116,7 @@ function App() {
               <>
                 <Route path="dashboard/cart" element={<Cart/>} />
                 <Route path="dashboard/enrolled-courses" element={<EnrolledCourses/>} />
+                <Route path="dashboard/saved-notes" element={<SavedNotes/>} />
               </>
             )
           }
@@ -124,6 +126,7 @@ function App() {
               <>
               <Route path="/dashboard/instructor" element={<Instructor />} />
               <Route path="dashboard/add-course" element={<AddCourse />} />
+              <Route path="dashboard/add-notes" element={<AddNotes />} />
               <Route path="dashboard/my-courses" element={<MyCourses />} />
               <Route path="dashboard/edit-course/:courseId" element={<EditCourse />} />
               

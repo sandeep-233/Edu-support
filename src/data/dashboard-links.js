@@ -29,16 +29,31 @@ export const sidebarLinks = [
   },
   {
     id: 5,
+    name: "Add Notes",
+    path: "/dashboard/add-notes",
+    type: ACCOUNT_TYPE.INSTRUCTOR,
+    icon: "VscAdd",
+  },
+  {
+    id: 6,
     name: "Enrolled Courses",
     path: "/dashboard/enrolled-courses",
     type: ACCOUNT_TYPE.STUDENT,
     icon: "VscMortarBoard",
   },
   {
-    id: 6,
+    id: 7,
+    name: "Saved Notes",
+    path: "/dashboard/saved-notes",
+    type: ACCOUNT_TYPE.STUDENT,
+    icon: "VscNotebook",
+  },
+  {
+    id: 8,
     name: "Your Cart",
     path: "/dashboard/cart",
     type: ACCOUNT_TYPE.STUDENT,
     icon: "VscHistory",
   },
+  
 ];

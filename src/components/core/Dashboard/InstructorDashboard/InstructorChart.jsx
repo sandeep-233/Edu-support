@@ -46,9 +46,9 @@ const InstructorChart = ({courses}) => {
 
 
     //create options
-    const options = {
+    // const options = {
 
-    };
+    // };
 
 
   return (
@@ -70,7 +70,6 @@ const InstructorChart = ({courses}) => {
       <div>
         <Pie 
             data={currChart === "students" ? chartDataForStudents : chartDataForIncome}
-            options={options}
         />
       </div>
     </div>
