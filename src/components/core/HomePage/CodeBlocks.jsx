@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 
 
 const CodeBlocks = ({
-  position, heading, subheading, btn1, btn2, codeblock, backgroundGradiant, codeColor
+  position, heading, subheading, btn1, codeblock, backgroundGradiant, codeColor
 }) => {
   return (
     <div className={`flex ${position} my-20 justify-between gap-10`}>
@@ -22,12 +22,6 @@ const CodeBlocks = ({
             <div className='flex gap-2 items-center'>
               {btn1.btnText}
               <BsFillArrowRightCircleFill/>
-            </div>
-          </Button>
-
-          <Button active={btn2.active} linkto={btn2.linkto}>
-            <div>
-              {btn2.btnText}
             </div>
           </Button>
         </div>

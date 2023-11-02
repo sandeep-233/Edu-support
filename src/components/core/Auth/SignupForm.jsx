@@ -43,7 +43,7 @@ const SignupForm = () => {
 
     // form submit handler 
     const handleOnSubmit = (e) => {
-        console.log("Enter handleOnSumbit handler function")
+        // console.log("Enter handleOnSumbit handler function")
         e.preventDefault()
         if(password !== confirmPassword) {
             toast.error("Passwords Do NOt Match")
@@ -53,7 +53,7 @@ const SignupForm = () => {
             ...formData,
             accountType,
         }
-        console.log("setting signup Data:", signupData);
+        // console.log("setting signup Data:", signupData);
         dispatch(setSignupData(signupData))
         dispatch(sendOtp(formData.email, navigate))
 
@@ -94,7 +94,7 @@ const SignupForm = () => {
         <div className="flex gap-x-4">
             <label htmlFor="firstName">
                 <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-                    First Nmae <sup className="text-pink-200">*</sup>
+                    First Name <sup className="text-pink-200">*</sup>
                 </p>
                 <input
                  type="text" 
@@ -112,7 +112,7 @@ const SignupForm = () => {
 
             <label htmlFor="lastName">
                 <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-                    Last Nmae <sup className="text-pink-200">*</sup>
+                    Last Name <sup className="text-pink-200">*</sup>
                 </p>
                 <input
                  type="text" 

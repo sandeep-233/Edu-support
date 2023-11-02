@@ -82,13 +82,6 @@ const Home = () => {
                         active: true
                         }                        
                     }
-                    btn2={
-                        {
-                        btnText: "try it yourself",
-                        linkto: "/signup",
-                        active: true
-                        }                   
-                    }
 
                     codeblock={`<<!DOCTYPE html>
                                 <html>
@@ -131,13 +124,6 @@ const Home = () => {
                         linkto: "/signup",
                         active: true
                         }                        
-                    }
-                    btn2={
-                        {
-                        btnText: "try it yourself",
-                        linkto: "/signup",
-                        active: true
-                        }                   
                     }
 
                     codeblock={`<<!DOCTYPE html>
@@ -202,7 +188,7 @@ const Home = () => {
 
                 <div className='flex flex-col gap-10 w-[40%] items-center'>
                     <div className='text-[16px]'>
-                        The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
+                        The modern EduSupport is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
                     </div>
                     <Button active={true} linkto={"/signup"}>
                         <div>

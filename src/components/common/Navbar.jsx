@@ -54,7 +54,8 @@ const Navbar = () => {
       <div className="flex w-11/12 max-w-maxContent items-center justify-between">
 
         <Link to="/">
-          <img src={Logo} alt="Logo" width={160} height={32} loading="lazy" />
+          {/* <img src={Logo} alt="Logo" width={160} height={32} loading="lazy" /> */}
+          <h2 className='text-pure-greys-25 font-semibold text-2xl '>EduSupoort</h2>
         </Link>
 
         <nav className="hidden md:block">

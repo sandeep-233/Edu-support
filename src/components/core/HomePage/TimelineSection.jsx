@@ -61,9 +61,9 @@ const TimelineSection = () => {
 
       <div className='relative shadow-blue-200'>
 
-        <img src={timelineImage}
+        <img src="https://ecampusontario.pressbooks.pub/app/uploads/sites/1648/2021/05/iStock-1211977288.jpg"
           alt="timelineImage"
-          className='shadow-white object-cover h-fit'
+          className='shadow-white object-cover h-fit w-[710px]'
         />
 
         <div className='absolute bg-caribbeangreen-700 flex flex-row text-white uppercase py-7

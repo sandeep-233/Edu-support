@@ -19,4 +19,8 @@ export const NavbarLinks = [
     title: "Notes",
     path: '/notes',
   },
+  {
+    title: "Parents",
+    path: '/parents',
+  },
 ];

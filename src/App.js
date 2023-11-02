@@ -32,6 +32,7 @@ import { ACCOUNT_TYPE } from "./utils/constants";
 import { SavedNotes } from "./components/core/Dashboard/SavedNotes";
 import { Notes } from "./pages/Notes";
 import AddNotes from "./components/core/Dashboard/AddNotes";
+import { Parents } from "./pages/Parents";
 
 function App() {
 
@@ -100,6 +101,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
 
         <Route path="/notes" element={<Notes/>} />
+        <Route path="/parents" element={<Parents/>} />
 
         <Route
          element={

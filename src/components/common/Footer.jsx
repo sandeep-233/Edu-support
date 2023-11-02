@@ -52,10 +52,10 @@ const Footer = () => {
               </div>
 
               <div className='flex gap-3 text-lg'>
-                <FaFacebook />
-                <FaGoogle />
-                <FaTwitter />
-                <FaYoutube />
+                <FaFacebook className='hover:text-blue-5 cursor-pointer'/>
+                <FaGoogle className='hover:text-blue-5 cursor-pointer' />
+                <FaTwitter className='hover:text-blue-5 cursor-pointer' />
+                <FaYoutube className='hover:text-blue-5 cursor-pointer' />
               </div>
             </div>
 
@@ -200,9 +200,6 @@ const Footer = () => {
 
             </div>
 
-            <div className='text-center'>
-              Made with ❤️ CodeHelp © 2023 Studynotion
-            </div>
         </div>
       </div>
       
