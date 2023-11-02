@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, matchPath, useLocation } from 'react-router-dom'
-import Logo from '../../assets/Logo/Logo-Full-Light.png'
+import Logo from '../../assets/Logo/Logo.png'
 import {NavbarLinks} from '../../data/navbar-links'
 import { useSelector } from 'react-redux'
 import {AiOutlineMenu, AiOutlineShoppingCart, AiOutlineClose} from 'react-icons/ai'
@@ -53,9 +53,9 @@ const Navbar = () => {
     >
       <div className="flex w-11/12 max-w-maxContent items-center justify-between">
 
-        <Link to="/">
-          {/* <img src={Logo} alt="Logo" width={160} height={32} loading="lazy" /> */}
-          <h2 className='text-pure-greys-25 font-semibold text-2xl '>EduSupoort</h2>
+        <Link to="/" className='flex gap-3'>
+          <img src={Logo} alt="Logo" width={32} height={32} loading="lazy" className='rounded-full'/>
+          <h2 className='text-pure-greys-25 font-semibold text-2xl '>EduSupport</h2>
         </Link>
 
         <nav className="hidden md:block">
@@ -250,7 +250,7 @@ const Navbar = () => {
               {token === null && (
                 <Link to="/login">
                   <button className="rounded-[8px] border border-richblack-700 bg-richblack-800 px-[12px] py-[8px] text-richblack-100">
-                    Log in
+                    Sign in
                   </button>
                 </Link>
               )}

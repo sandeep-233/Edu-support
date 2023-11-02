@@ -20,7 +20,7 @@ export const NavbarLinks = [
     path: '/notes',
   },
   {
-    title: "Parents",
+    title: "Parent's guidance",
     path: '/parents',
   },
 ];

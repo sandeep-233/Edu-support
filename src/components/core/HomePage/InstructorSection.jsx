@@ -1,7 +1,7 @@
 import React from 'react'
 import HighlightText from './HighlightText'
 import Button from './Button'
-import Instructor from '../../../assets/Images/Instructor.png'
+import Instructor from '../../../assets/Images/Instructor.jpg'
 // import FaArrowRight from 'react-icons/fa'
 
 const InstructorSection = () => {
@@ -10,7 +10,7 @@ const InstructorSection = () => {
       <div className='flex flex-row gap-20 items-center'>
 
         <div className='w-[50%]'>
-          <img src="https://t3.ftcdn.net/jpg/02/65/18/30/360_F_265183061_NkulfPZgRxbNg3rvYSNGGwi0iD7qbmOp.jpg"
+          <img src={Instructor}
            alt=""
            className='shadow-white'
           />

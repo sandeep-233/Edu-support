@@ -13,46 +13,42 @@ export const Parents = () => {
     const chartRef = useRef(null);
     const chartInstance = useRef(null);
 
-    const [checkUser, setCheckUser] = useState(false);    
+    const [checkUser, setCheckUser] = useState("hidden");  
+     
 
-    const handleOnSubmit = (e) => {
-        e.preventDefault()
-        setCheckUser(!checkUser)
-      }
-
-    // useEffect(()=>{
-    //     if(chartInstance.current) {
-    //         chartInstance.current.destroy()
-    //     }
-    //     const myChartRef = chartRef.current.getContext('2d');
-
-
-    //     chartInstance.current = new Chart(myChartRef, {
-    //         type: "pie",
-    //         data: {
-    //             labels: ["Enrolled Couses", "Completed Courses", "Partial completed"],
-    //             datasets: [
-    //                 {
-    //                     data: [StudentProgress[0].enrolledCourses, StudentProgress[0].completedCourses, StudentProgress[0].partialCompleted],
-    //                     backgroundColor: [
-    //                         'rgba(255, 99, 132)',
-    //                         'rgb(54, 164, 235)',
-    //                         'rgb(255, 205, 86)',
-    //                     ],
-    //                 }
-    //             ]
-    //         }
-    //     })
-
-    //     return ()=>{
-    //         if(chartInstance.current) {
-    //             chartInstance.current.destroy()
-    //         }
-    //     }
-    // })
+    
+        useEffect(()=>{
+            if(chartInstance.current) {
+                chartInstance.current.destroy()
+            }
+            const myChartRef = chartRef.current.getContext('2d');
+    
+            chartInstance.current = new Chart(myChartRef, {
+                type: "pie",
+                data: {
+                    labels: ["Enrolled Couses", "Completed Courses", "Partial completed"],
+                    datasets: [
+                        {
+                            data: [StudentProgress[0].enrolledCourses, StudentProgress[0].completedCourses, StudentProgress[0].partialCompleted],
+                            backgroundColor: [
+                                'rgba(255, 99, 132)',
+                                'rgb(54, 164, 235)',
+                                'rgb(255, 205, 86)',
+                            ],
+                        }
+                    ]
+                }
+            })
+    
+            return ()=>{
+                if(chartInstance.current) {
+                    chartInstance.current.destroy()
+                }
+            }
+        } )
 
   return (
-    <div className='w-full min-h-[100vh] h-full flex flex-col gap-6 text-pure-greys-5 items-center mt-8'>
+    <div className='w-full min-h-[100vh] h-full flex flex-col gap-6 text-pure-greys-5 items-center mt-8 mb-8'>
 
         {/* Articles for parents  */}
         <div className='flex flex-col gap-3 w-[98%]' >
@@ -93,13 +89,13 @@ export const Parents = () => {
         {/* student progress report */}
         <div className='flex flex-col gap-3 w-[98%]'>
             <h3 className='text-pure-greys-25 font-semibold text-xl '>Student Progress report</h3>
-            <div className='flex flex-row gap-2 bg-richblack-700 justify-between items-start p-4 rounded-lg'>
+            <div className='flex flex-row gap-2 bg-richblack-700 justify-evenly items-start p-4 rounded-lg'>
                 {/* login  */}
-                <div>
-                    <form action="" className='flex flex-col items-start gap-4' onSubmit={handleOnSubmit}>
+                <div className='bg-richblack-800 p-2 rounded-lg'>
+                    <div className='flex flex-col items-center gap-4'>
                         <label htmlFor="" className='w-full'>
                             <p className='mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5'>
-                                Email Address <sup className='text-pink-200'>*</sup>
+                                User Email Address <sup className='text-pink-200'>*</sup>
                             </p>
                             <input type="email" name="email" placeholder='Enter email' className='rounded-sm'/>
                         </label>
@@ -108,37 +104,32 @@ export const Parents = () => {
                             <p className='mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5'>
                                 Password <sup className='text-pink-200'>*</sup>
                             </p>
-                            <input type="password" name="password" placeholder='Enter password' className='rounded-sm'/>
+                            <input type="password" name="password" placeholder='Enter password' className='rounded-sm text-richblack-800'/>
                         </label>
 
                         <div className='flex gap-3'>
-                            <button
-                            type='submit'
-                            className='mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900'
-                            onClick={()=>(!checkUser)}
+                            <div
+                            className='mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900 cursor-pointer'
+                            onClick={()=>{setCheckUser("flex")}}
                             >
                             Check
-                            </button>
+                            </div>
 
-                            <button
-                            type='submit'
-                            className='mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900'
-                            onClick={()=>{!checkUser}}
+                            <div
+                            className='mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900 cursor-pointer'
+                            onClick={()=>{setCheckUser("hidden")}}
                             >
                             Reset
-                            </button>
+                            </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
 
                 {/* student details and progress report */}
-                        {/* <div className='flex flex-col items-start justify-start gap-8 ' >
+                        <div className={`${checkUser} flex-col items-center justify-start gap-8 `} >
                             <h3><b>User name: </b> {StudentProgress[0].name}</h3>
-                            <canvas ref={chartRef} className='w-250px'/>
-                        </div> */}
-                <div>
-                    
-                </div>
+                            <canvas ref={chartRef}/>
+                        </div>
             </div>
         </div>
 
