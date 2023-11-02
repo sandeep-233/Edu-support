@@ -1,7 +1,7 @@
 import React from 'react'
 import  {FooterLink2}  from '../../data/footer-links';
 
-import Logo from '../../assets/Logo/Logo-Full-Light.png';
+import Logo from '../../assets/Logo/Logo.png';
 import { Link } from 'react-router-dom';
 
 import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -30,7 +30,10 @@ const Footer = () => {
           {/* section 1 */}
           <div className="lg:w-[50%] flex flex-wrap flex-row justify-between lg:border-r lg:border-richblack-700 pl-3 lg:pr-5 gap-3">
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
-              <img src={Logo} className='object-contain' alt="" />
+              <div className='flex gap-2 items-center'>
+                <img src={Logo} className='object-contain rounded-full' alt="" width={32} height={32}  />
+                <p className='text-richblack-5 font-semibold'>EduSupport</p>
+              </div>
 
               <h1 className='text-richblack-50 font-semibold text-[16px] '>
                 Company

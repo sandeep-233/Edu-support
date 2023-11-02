@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {BsFillArrowRightCircleFill} from "react-icons/bs"
 import HighlightText from '../components/core/HomePage/HighlightText'
 import Button from '../components/core/HomePage/Button'
-import Banner from "../assets/Images/banner.mp4"
+import Banner from "../assets/Images/banner1.mp4"
 import CodeBlocks from "../components/core/HomePage/CodeBlocks";
 import ExploreMore from '../components/core/HomePage/ExploreMore'
 import TimelineSection from '../components/core/HomePage/TimelineSection'
@@ -31,12 +31,12 @@ const Home = () => {
             </Link>
 
             <div className='text-center text-4xl font-semibold mt-7 '>
-                Empower Your Future With
-                <HighlightText text={" Coding Skills"} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
+                Shape Your Futures 
+                <HighlightText text={" Through Education"} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
             </div>
 
             <div className='mt-4 w-[90%] text-center text-lg font-bold text-richblack-300 '> 
-                With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors. 
+            With our diverse educational resources, you can learn at your own pace from anywhere in the world and gain access to a wealth of materials, including hands-on projects, quizzes, and personalized feedback from instructors, all designed to nurture your potential.
             </div>
 
             {/* two buttons signup and login  */}
@@ -51,13 +51,14 @@ const Home = () => {
             </div>
 
             {/* video  */}
-            <div className='mx-3 my-12 shadow-blue-200'>
+            <div className='mx-3 my-12 shadow-blue-200 w-[90vw] flex items-center'>
                 <video
                 muted
                 loop
                 autoPlay
+                className='w-full'
                 >
-                    <source src={Banner} type="video/mp4" />
+                    <source src={Banner} type="video/mp4" className='w-full'/>
                 </video>
             </div>
 
