@@ -4,19 +4,19 @@ export const HomePageExplore = [
         courses : [
             {
                 heading : "Data science",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
+                description : "This course introduces the fundamental principles and techniques of data science, focusing on data analysis, statistical modeling, machine learning, and data visualization.",
                 level : 'Beginner',
                 lessionNumber : 6
             },
             {
                 heading : "Machine Learning",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
+                description : "This course delves into the field of machine learning, covering topics such as supervised and unsupervised learning, deep learning, and the application of algorithms to develop predictive models and make data-driven decisions.",
                 level : 'Beginner',
                 lessionNumber : 6
             },
             {
                 heading : "UI/UX",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
+                description : "This course focuses on User Interface (UI) and User Experience (UX) design principles and practices. It covers the creation of intuitive and visually appealing digital interfaces, with an emphasis on user-centered design, usability, and the overall user experience.",
                 level : 'Beginner',
                 lessionNumber : 6
             },

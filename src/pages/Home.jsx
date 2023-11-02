@@ -190,13 +190,13 @@ const Home = () => {
 
                 <div className='flex flex-col gap-10 w-[40%] items-center'>
                     <div className='text-[16px]'>
-                    Practice and learn till you perfect. Study from anywhere at your convenience. We are available on Android devices and platform.
+                    Practice and learn till you are perfect. Study from anywhere at your convenience. We are available on Android devices and platform.
                     </div>
                     <Button active={true} linkto={"/signup"}>
                         <div className='flex gap-2 items-center'>
                             <BsGooglePlay size={38}/>
                             <div className='flex flex-col gap-1 items-start'>
-                                <p className='text-xs'>GET IN ON</p>
+                                <p className='text-xs'>GET IT ON</p>
                                 <p className='text-sm font-semibold'>Google play</p>
                             </div>
                         </div>
