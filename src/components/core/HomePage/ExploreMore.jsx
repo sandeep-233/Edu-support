@@ -31,7 +31,7 @@ const ExploreMore = () => {
       
         <div className="text-4xl font-semibold text-center my-10">
             Unlock the 
-            <HighlightText text={" Power of Code"} color={"bg-gradient-to-tl from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
+            <HighlightText text={" Power of Learning"} color={"bg-gradient-to-tl from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
         </div>
 
         <p className="text-center text-richblack-300 text-lg font-semibold mt-1">
