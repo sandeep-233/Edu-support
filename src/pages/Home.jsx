@@ -19,7 +19,7 @@ const Home = () => {
       {/* section 1 */}
 
         <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between '>
-            <Link to={"/signup"} >
+            {/* <Link to={"/signup"} >
                 <div className='mx-auto rounded-full bg-richblack-800 font-bold text-richblack-500
                     transition-all duration-200 hover:scale-95 w-fit mt-16  '>
                     <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px]
@@ -28,10 +28,10 @@ const Home = () => {
                         <BsFillArrowRightCircleFill/>
                     </div>
                 </div>
-            </Link>
+            </Link> */}
 
             <div className='text-center text-4xl font-semibold mt-7 '>
-                Shape Your Futures 
+                Shape Your Future  
                 <HighlightText text={" Through Education"} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
             </div>
 
@@ -42,12 +42,12 @@ const Home = () => {
             {/* two buttons signup and login  */}
             <div className='flex flex-row gap-7 mt-8'>
                 <Button active={true} linkto={"/signup"}>
-                    Learn More
+                    Explore our courses
                 </Button>
 
-                <Button active={false} linkto={"/login"}>
+                {/* <Button active={false} linkto={"/login"}>
                     Book a demo
-                </Button>
+                </Button> */}
             </div>
 
             {/* video  */}
@@ -211,7 +211,7 @@ const Home = () => {
         <div className='w-11/12 mx-auto max-w-maxContent flex flex-col items-center justify-between gap-8 first-letter bg-richblack-900 text-white'>
             <InstructorSection/>
             
-            <h2 className='text-center text-4xl font-semibold mt-10'>review from other learners</h2>
+            <h2 className='text-center text-4xl font-semibold mt-10'>Review from other learners</h2>
             {/* Review Slider here */}
             <ReviewSlider/>
         </div>

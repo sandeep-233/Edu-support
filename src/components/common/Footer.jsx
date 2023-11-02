@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa";
 
 
-const BottomFooter = ['Privacy Plicy', 'Cookie Policy', 'Terms'];
+const BottomFooter = ['Privacy Policy', 'Cookie Policy', 'Terms'];
 const Resources =[
   'Articles',
   'Blog',
@@ -202,7 +202,7 @@ const Footer = () => {
               }
 
             </div>
-
+            <div className="text-center"> © 2023 EduSupport.com </div>
         </div>
       </div>
       

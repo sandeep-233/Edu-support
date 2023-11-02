@@ -1,6 +1,6 @@
 import React from 'react'
 import HighlightText from '../components/core/HomePage/HighlightText'
-import BannerImage1 from '../assets/Images/aboutus1.webp'
+import BannerImage1 from '../assets/Images/aboutus.png'
 import BannerImage2 from '../assets/Images/aboutus2.webp'
 import BannerImage3 from '../assets/Images/aboutus3.webp'
 import Quote from '../components/core/AboutPage/Quote'
@@ -87,7 +87,7 @@ const About = () => {
                    <HighlightText text={"Our Mission"} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"} />
                 </h1>
                 <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                  our mission goes beyond just delivering courses online. We wanted to create a vibrant community of learners, where individuals can connect, collaborate, and learn from one another. We believe that knowledge thrives in an environment of sharing and dialogue, and we foster this spirit of collaboration through forums, live sessions, and networking opportunities.
+                Our mission is to empower children, especially those facing disruptions in their education, by providing equitable access to high-quality educational resources, and fostering resilience through personalized learning. We aim to be a beacon of hope and support, ensuring that every child, regardless of their circumstances, can access the tools and guidance needed to shape a brighter future.
                 </p>
             </div>
           </div>
