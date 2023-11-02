@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {BsFillArrowRightCircleFill} from "react-icons/bs"
+import {BsFillArrowRightCircleFill, BsGooglePlay} from "react-icons/bs"
 import HighlightText from '../components/core/HomePage/HighlightText'
 import Button from '../components/core/HomePage/Button'
 import Banner from "../assets/Images/banner1.mp4"
@@ -84,6 +84,7 @@ const Home = () => {
                         }                        
                     }
 
+                    codeblock={""}
                     // codeblock={`<<!DOCTYPE html>
                     //             <html>
                     //             <head>
@@ -112,7 +113,7 @@ const Home = () => {
                     heading={
                         <div className="text-4xl font-semibold">
                             Unlock Your
-                            <HighlightText text={" potential "} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
+                            <HighlightText text={"Coding potential "} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
                             with our online courses
                         </div>
                     }
@@ -183,17 +184,21 @@ const Home = () => {
 
             <div className='flex flex-row gap-5 mb-10 mt-[95px] '>
                 <div className='text-4xl font-semibold w-[45%] '>
-                    Get the Skills you need for a 
-                    <HighlightText text={" Job that is in demand"} color={"bg-gradient-to-tl from-[#5433FF] via-[#20BDFF] to-[#A5FECB]"}/>
+                    Learn from anywhere and get the 
+                    <HighlightText text={" skills you need"} color={"bg-gradient-to-tl from-[#5433FF] via-[#20BDFF] to-[#A5FECB]"}/>
                 </div>
 
                 <div className='flex flex-col gap-10 w-[40%] items-center'>
                     <div className='text-[16px]'>
-                        The modern EduSupport is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
+                    Practice and learn till you perfect. Study from anywhere at your convenience. We are available on Android devices and platform.
                     </div>
                     <Button active={true} linkto={"/signup"}>
-                        <div>
-                            Learn more
+                        <div className='flex gap-2 items-center'>
+                            <BsGooglePlay size={38}/>
+                            <div className='flex flex-col gap-1 items-start'>
+                                <p className='text-xs'>GET IN ON</p>
+                                <p className='text-sm font-semibold'>Google play</p>
+                            </div>
                         </div>
                     </Button>
                 </div>

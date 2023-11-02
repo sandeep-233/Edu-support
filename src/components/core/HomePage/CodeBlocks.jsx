@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button'
 import {BsFillArrowRightCircleFill} from "react-icons/bs"
 import { TypeAnimation } from 'react-type-animation'
+import image from '../../../assets/Images/Pooja0002.jpg'
 
 
 const CodeBlocks = ({
@@ -32,24 +33,35 @@ const CodeBlocks = ({
       <div className='h-fit flex lg:flex-row text-[10px] w-[100%] py-4 lg:w-[500px]'>
         {/* HW: add bg-gradiant  */}
 
-        <div className='text-center flex flex-col w-[10%] text-richblack-400 font-inter font-bold'>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
-          <p>6</p>
-          <p>7</p>
-          <p>8</p>
-          <p>9</p>
-          <p>10</p>
-          <p>11</p>
-          <p>12</p>
-          <p>13</p>
-          <p>14</p>
-          <p>15</p>
-          <p>16</p>
-        </div>
+        {
+          codeblock != "" && (
+            <div className='text-center flex flex-col w-[10%] text-richblack-400 font-inter font-bold'>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+          </div>
+          )
+        }
+        {
+          codeblock == "" && (
+            <div>
+              <img src={image} alt="" />
+            </div>
+          )
+        }
 
         <div className={`w-[90%] flex flex-col gap-3 font-bold font-mono ${codeColor} pr-2`}>
           <TypeAnimation
