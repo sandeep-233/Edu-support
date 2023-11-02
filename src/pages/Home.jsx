@@ -69,7 +69,7 @@ const Home = () => {
                     heading={
                         <div className='text-4xl font-semibold'>
                             Unlock Your
-                            <HighlightText text={" coding potential "} color={"bg-gradient-to-tl from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
+                            <HighlightText text={" potential "} color={"bg-gradient-to-tl from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
                             with our online courses
                         </div>
                     }
@@ -78,29 +78,29 @@ const Home = () => {
                     }
                     btn1={
                         {
-                        btnText: "try it yourself",
+                        btnText: "Book a free demo",
                         linkto: "/signup",
                         active: true
                         }                        
                     }
 
-                    codeblock={`<<!DOCTYPE html>
-                                <html>
-                                <head>
-                                    <title>Example</title>
-                                    <linkrel="stylesheet"href="styles.css">
-                                </head>
-                                <body>
-                                    <h1>
-                                        <a href="/">Header</a>
-                                    </h1>
-                                    <nav>
-                                        <a href="one/">One</a>
-                                        <a href="two/">Two</a>
-                                        <a href="three/">Three</a>
-                                    </nav>
-                                </body>`}
-                    codeColor={"text-yellow-25"}
+                    // codeblock={`<<!DOCTYPE html>
+                    //             <html>
+                    //             <head>
+                    //                 <title>Example</title>
+                    //                 <linkrel="stylesheet"href="styles.css">
+                    //             </head>
+                    //             <body>
+                    //                 <h1>
+                    //                     <a href="/">Header</a>
+                    //                 </h1>
+                    //                 <nav>
+                    //                     <a href="one/">One</a>
+                    //                     <a href="two/">Two</a>
+                    //                     <a href="three/">Three</a>
+                    //                 </nav>
+                    //             </body>`}
+                    // codeColor={"text-yellow-25"}
 
                 />
             </div>
@@ -112,7 +112,7 @@ const Home = () => {
                     heading={
                         <div className="text-4xl font-semibold">
                             Unlock Your
-                            <HighlightText text={" coding potential "} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
+                            <HighlightText text={" potential "} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
                             with our online courses
                         </div>
                     }
@@ -121,7 +121,7 @@ const Home = () => {
                     }
                     btn1={
                         {
-                        btnText: "try it yourself",
+                        btnText: "Book a free demo",
                         linkto: "/signup",
                         active: true
                         }                        

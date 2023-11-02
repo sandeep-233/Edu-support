@@ -12,12 +12,12 @@ const LearningLanguageSection = () => {
       <div className='flex flex-col gap-5 items-center'>
 
         <div className='text-4xl font-semibold text-center'>
-          Your Swiss Knife for
-          <HighlightText text={" learning any language "} color={"bg-gradient-to-tl from-[#5433FF] via-[#20BDFF] to-[#A5FECB]"} />
+          One-To-One
+          <HighlightText text={"Mentorship"} color={"bg-gradient-to-tl from-[#5433FF] via-[#20BDFF] to-[#A5FECB]"} />
         </div>
 
         <div className='text-center text-richblack-600 mx-auto text-base font-medium w-[70%]'>
-          Using spin making learning multiple languages easy. with 20+ languages realistic voice-over, progress tracking, custom schedule and more.
+        Need more details? Our expert academic counsellors will be happy to patiently explain everything that you want to know.
         </div>
 
         <div className='flex flex-row items-center justify-center mt-5'>
@@ -38,7 +38,7 @@ const LearningLanguageSection = () => {
         <div className='w-fit'>
           <Button active={true} linkto={"/signup"}>
             <div>
-              Learn more
+            Speak to an expert
             </div>
           </Button>
         </div>

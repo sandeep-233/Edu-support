@@ -6,7 +6,7 @@ import CourseCard from './CourseCard';
 
 
 const tabsNmae = [
-    "Free",
+    "Trending now",
     "New to coding",
     "Most popular",
     "Skill paths",
@@ -34,7 +34,7 @@ const ExploreMore = () => {
             <HighlightText text={" Power of Learning"} color={"bg-gradient-to-tl from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
         </div>
 
-        <p className="text-center text-richblack-300 text-lg font-semibold mt-1">
+        <p className="text-center text-richblack-300 text-lg font-semibold mt-1 mb-8">
             Learn to build anything you can imagine
         </p>
 
