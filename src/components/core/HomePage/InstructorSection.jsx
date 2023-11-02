@@ -10,7 +10,7 @@ const InstructorSection = () => {
       <div className='flex flex-row gap-20 items-center'>
 
         <div className='w-[50%]'>
-          <img src={Instructor}
+          <img src="https://t3.ftcdn.net/jpg/02/65/18/30/360_F_265183061_NkulfPZgRxbNg3rvYSNGGwi0iD7qbmOp.jpg"
            alt=""
            className='shadow-white'
           />
