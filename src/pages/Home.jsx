@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
             </Link> */}
 
-            <div className='text-center text-4xl font-semibold mt-7 '>
+            <div className='text-center text-4xl font-semibold mt-16 '>
                 Shape Your Future  
                 <HighlightText text={" Through Education"} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
             </div>
