@@ -19,7 +19,7 @@ const Home = () => {
       {/* section 1 */}
 
         <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between '>
-            {/* <Link to={"/signup"} >
+            <Link to={"/signup"} >
                 <div className='mx-auto rounded-full bg-richblack-800 font-bold text-richblack-500
                     transition-all duration-200 hover:scale-95 w-fit mt-16  '>
                     <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px]
@@ -28,9 +28,9 @@ const Home = () => {
                         <BsFillArrowRightCircleFill/>
                     </div>
                 </div>
-            </Link> */}
+            </Link>
 
-            <div className='text-center text-4xl font-semibold mt-16 '>
+            <div className='text-center text-4xl font-semibold mt-8 '>
                 Shape Your Future  
                 <HighlightText text={" Through Education"} color={"bg-gradient-to-tr from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"}/>
             </div>
