@@ -19,8 +19,8 @@ export const NavbarLinks = [
     title: "Free study material",
     path: '/notes',
   },
-  {
-    title: "Parental guidance",
-    path: '/parents',
-  },
+  // {
+  //   title: "Parental guidance",
+  //   path: '/parents',
+  // },
 ];
