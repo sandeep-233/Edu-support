@@ -122,14 +122,21 @@ exports.getEnrolledCourses = async (req, res) => {
       const userDetails = await User.findOne({
         _id: userId,
       })
-        .populate("courses")
-        .exec()
+        .populate({
+			path : "courses",
+				populate : {
+					path: "courseContent",
+			}
+		}
+		).populate("courseProgress").exec();
+
       if (!userDetails) {
         return res.status(400).json({
           success: false,
           message: `Could not find user with id: ${userDetails}`,
         })
       }
+
       return res.status(200).json({
         success: true,
         data: userDetails.courses,

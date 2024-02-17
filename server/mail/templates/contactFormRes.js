@@ -54,7 +54,7 @@ exports.contactUsEmail = (
                 color: #000000;
                 text-decoration: none;
                 border-radius: 5px;
-                font-size: 16px;
+                font<a href="https://edu-support-nine.vercel.app/">EduSupport</a>-size: 16px;
                 font-weight: bold;
                 margin-top: 20px;
             }
@@ -74,8 +74,7 @@ exports.contactUsEmail = (
     
     <body>
         <div class="container">
-            <a href="https://studynotion-edtech-project.vercel.app"><img class="logo"
-                    src="https://i.ibb.co/7Xyj3PC/logo.png" alt="StudyNotion Logo"></a>
+            
             <div class="message">Contact Form Confirmation</div>
             <div class="body">
                 <p>Dear ${firstname} ${lastname},</p>
@@ -89,7 +88,7 @@ exports.contactUsEmail = (
                 <p>We appreciate your interest and will get back to you shortly. </p>
             </div>
             <div class="support">If you have any further questions or need immediate assistance, please feel free to reach
-                out to us at <a href="mailto:info@studynotion.com">info@studynotion.com</a>. We are here to help!</div>
+                out to us at <a href="mailto:info@edusupport.com">info@edusupport.com</a>. We are here to help!</div>
         </div>
     </body>
     

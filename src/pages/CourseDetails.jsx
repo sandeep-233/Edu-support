@@ -100,6 +100,8 @@ function CourseDetails() {
     studentsEnrolled,
     createdAt,
   } = response.data?.courseDetails;
+  
+  console.log('courseDetails: ',response.data?.courseDetails)
 
 
   const handleBuyCourse = () => {
