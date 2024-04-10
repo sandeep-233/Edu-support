@@ -10,11 +10,11 @@
 
 <h2>Project Screenshots:</h2>
 <div>
-  <img src="https://repositry-images.vercel.app/static/media/img2.227faad9439d51b2f769.png" alt="project-screenshot" width="800" >
+  <img src="https://repositry-images.vercel.app/static/media/img2.227faad9439d51b2f769.png" alt="project-screenshot" width="1080" >
 
-  <img src="https://repositry-images.vercel.app/static/media/img3.cfce84cd78c7455cf1a3.png" alt="project-screenshot" width="800" >
+  <img src="https://repositry-images.vercel.app/static/media/img3.cfce84cd78c7455cf1a3.png" alt="project-screenshot" width="1080" >
   
-  <img src="https://repositry-images.vercel.app/static/media/img4.88a81393ec8dd6ea0ccf.png" alt="project-screenshot" width="800" >
+  <img src="https://repositry-images.vercel.app/static/media/img4.88a81393ec8dd6ea0ccf.png" alt="project-screenshot" width="1080" >
 </div>
 
 
