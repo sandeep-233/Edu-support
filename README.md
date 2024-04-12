@@ -4,9 +4,12 @@
 
 <p id="description">It’s a fully functional Ed-tech platform utilizing the MERN stack (MongoDB Express.js React.js Node.js). This project showcases proficiency in full-stack development including front-end and back-end technologies user authentication payment integration and database management.</p>
 
-<h2>🚀 Demo</h2>
+<h2>🚀 Live link</h2>
 
 [https://edu-support-nine.vercel.app/](https://edu-support-nine.vercel.app/)
+
+<h2>🚀 Demo video</h2>
+https://www.linkedin.com/posts/sandeep-kumar-bb3b2619b_studynotion-mernstack-onlinelearning-activity-7097494709639524352-X7-E?utm_source=share&utm_medium=member_desktop
 
 <h2>Project Screenshots:</h2>
 <div>
